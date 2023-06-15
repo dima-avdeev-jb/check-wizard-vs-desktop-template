@@ -5,6 +5,9 @@ plugins {
     id("org.jetbrains.compose")
 }
 
+group = "com.example"
+version = "1.0-SNAPSHOT"
+
 repositories {
     mavenCentral()
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
@@ -25,7 +28,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "KotlinJvmComposeDesktopApplication"
+            packageName = "demo1"
             packageVersion = "1.0.0"
         }
     }
